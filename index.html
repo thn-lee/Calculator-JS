@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- component -->
+    <style>
+      @import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
+    </style>
+
+    <div
+      class="min-w-screen min-h-screen bg-gray-100 flex flex-col items-center justify-center px-5 py-5"
+    >
+      <p class="text-6xl mb-8">My Calculator</p>
+      <div
+        class="w-full mx-auto rounded-xl bg-gray-100 shadow-xl text-gray-800 relative overflow-hidden"
+        style="max-width: 300px"
+      >
+        <div
+          class="w-full h-fit bg-gradient-to-b from-gray-800 to-gray-700 flex-col flex items-end text-right"
+          id="disp-container"
+        >
+          <div class="prev_equa" id="prev"></div>
+          <div class="display_screen" id="disp">0</div>
+        </div>
+        <div class="w-full bg-gradient-to-b from-slate-400 to-slate-500">
+          <div class="flex w-full">
+            <div class="btn_container">
+              <button class="btn_op" id="clear">C</button>
+            </div>
+            <div class="btn_container" id="cvrt">
+              <button class="btn_op">+/-</button>
+            </div>
+            <div class="btn_container">
+              <button class="btn_op" style="font-size: 1rem">%</button>
+            </div>
+            <div class="btn_container" id="divide">
+              <button class="btn_op">÷</button>
+            </div>
+          </div>
+          <div class="flex w-full">
+            <div class="btn_container" id="seven">
+              <button class="btn_num">7</button>
+            </div>
+            <div class="btn_container" id="eight">
+              <button class="btn_num">8</button>
+            </div>
+            <div class="btn_container" id="nine">
+              <button class="btn_num">9</button>
+            </div>
+            <div class="btn_container" id="mult">
+              <button class="btn_op" style="font-size: 0.8rem">⨉</button>
+            </div>
+          </div>
+          <div class="flex w-full">
+            <div class="btn_container" id="four">
+              <button class="btn_num">4</button>
+            </div>
+            <div class="btn_container" id="five">
+              <button class="btn_num">5</button>
+            </div>
+            <div class="btn_container" id="six">
+              <button class="btn_num">6</button>
+            </div>
+            <div class="btn_container" id="minus">
+              <button class="btn_op">-</button>
+            </div>
+          </div>
+          <div class="flex w-full">
+            <div class="btn_container" id="one">
+              <button class="btn_num">1</button>
+            </div>
+            <div class="btn_container" id="two">
+              <button class="btn_num">2</button>
+            </div>
+            <div class="btn_container" id="three">
+              <button class="btn_num">3</button>
+            </div>
+            <div class="btn_container">
+              <button class="btn_op" id="plus">+</button>
+            </div>
+          </div>
+          <div class="flex w-full">
+            <div class="w-1/4 border-r border-slate-400">
+              <button class="btn_num" id="zero" value="0">0</button>
+            </div>
+            <div class="w-1/4 border-r border-slate-400">
+              <button class="btn_num" id="dot">.</button>
+            </div>
+            <div class="w-2/4 border-r border-slate-400">
+              <button class="btn_op" id="equal">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
