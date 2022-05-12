@@ -1,8 +1,11 @@
 # Calculator-JS
 not finished, for my trainee
 
+##Getting Started
 command
+```
 npm install
+```
 -to install tailwindcss modules
 
 Noted:
