@@ -1,7 +1,7 @@
 # Calculator-JS
 not finished, for my trainee
 
-##Getting Started
+## Getting Started
 command
 ```
 npm install
